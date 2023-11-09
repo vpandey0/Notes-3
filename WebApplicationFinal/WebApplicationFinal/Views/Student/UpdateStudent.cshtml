@@ -1,0 +1,45 @@
+﻿@model WebApplicationFinal.Models.Student
+
+@{
+    ViewBag.Title = "UpdateStudent";
+}
+@using (Html.BeginForm("UpdateStudent", "Student", FormMethod.Post))
+{
+<h2>UpdateStudent</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>Enter the Id: </th>
+        <td>
+            @Html.TextBoxFor(m=>m.Id)
+        </td>
+    </tr>
+
+    <tr>
+        <td>Name </td>
+        <td>
+            @Html.TextBoxFor(m => m.Name)<br />
+        </td>
+    </tr>
+    <tr>
+        <td> Enter Address: </td>
+        <td>
+            @Html.TextBoxFor(m => m.Address)<br />
+        </td>
+    </tr>
+    <tr>
+        <td> Enter Age </td>
+        <td>
+            @Html.TextBoxFor(m => m.Age)<br />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" value="Update" class="btn btn-outline-primary" />
+        </td>
+    </tr>
+</table>
+}

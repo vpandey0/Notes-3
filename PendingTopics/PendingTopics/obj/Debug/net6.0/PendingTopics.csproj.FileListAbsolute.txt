@@ -1,0 +1,14 @@
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\bin\Debug\net6.0\PendingTopics.exe
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\bin\Debug\net6.0\PendingTopics.deps.json
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\bin\Debug\net6.0\PendingTopics.runtimeconfig.json
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\bin\Debug\net6.0\PendingTopics.dll
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\bin\Debug\net6.0\PendingTopics.pdb
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\obj\Debug\net6.0\PendingTopics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\obj\Debug\net6.0\PendingTopics.AssemblyInfoInputs.cache
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\obj\Debug\net6.0\PendingTopics.AssemblyInfo.cs
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\obj\Debug\net6.0\PendingTopics.csproj.CoreCompileInputs.cache
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\obj\Debug\net6.0\PendingTopics.dll
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\obj\Debug\net6.0\refint\PendingTopics.dll
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\obj\Debug\net6.0\PendingTopics.pdb
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\obj\Debug\net6.0\PendingTopics.genruntimeconfig.cache
+C:\Users\InviaILC\source\repos\PendingTopics\PendingTopics\obj\Debug\net6.0\ref\PendingTopics.dll

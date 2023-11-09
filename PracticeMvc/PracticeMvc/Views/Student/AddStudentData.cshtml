@@ -1,0 +1,70 @@
+﻿
+@using PracticeMvc.Models
+@model Student
+
+
+
+    @using (Html.BeginForm("AddStudentData", "Student", FormMethod.Post))
+    {
+        <h3>Student Details</h3>
+        <table class="">
+
+            <tr >
+                <td>Enter Name: </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Name) <br />
+                    @*@Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })*@
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age: </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Age)<br />
+                    @*@Html.ValidationMessageFor(m => m.Age, "", new { @class = "text-danger" })*@
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email Id: </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Email)<br />
+                    @*@Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })*@
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Roll Number: </td>
+                <td>
+                    @Html.TextBoxFor(m => m.RollNo) <br />
+                    @*@Html.ValidationMessageFor(m => m.RollNo, "", new { @class = "text-danger" })*@
+                </td>
+
+            </tr>
+            <tr>
+                <td>Enter Branch: </td>
+                <td>
+                    @Html.DropDownListFor(m => m.Branch, new List<SelectListItem>
+                    {new SelectListItem{Text="B.Tech", Value="B.Tech" },
+                    new SelectListItem{Text="BCA", Value="BCA" },
+                    new SelectListItem{Text="MBA", Value="MBA" }}, "Which Branch?")
+                </td>
+            </tr>
+            <tr>
+                <td>Gender: </td>
+                <td>
+                    @Html.DropDownListFor(m => m.Gender, new List<SelectListItem>
+                      { new SelectListItem{Text="Male", Value="Male"},
+                     new SelectListItem{Text="Female", Value="Female"}}, "Please select")
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btn btn-primary" value="Submit"  onclick="ValidateAll()"/></td>
+            </tr>
+        </table>
+    }
+    @section scripts{
+        <script src="~/ValidationJavascript/AddData.js"></script>
+    }
+</body>
+</html>
+
+
+

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<EntityFrameworkDBFirst_P.Customers_SearchCustomers_Result>
+
+
+<h2>Searching Customer Data</h2>
+
+@using (Html.BeginForm("SearchData", "Home", FormMethod.Post))
+{
+
+    <span>Customer Name:</span>
+    <input type="text" name="name" />
+    <input type="submit" value="Search" class="btn btn-success btn-sm"/>
+    <br />
+    <br />
+    <table class="table table-bordered table-responsive-lg table-hover">
+        <tr class="table-dark">
+            <th>Customer Id</th>
+            <th>Contact Name</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+        @if (Model != null)
+        {
+            foreach (Customers_SearchCustomers_Result customer in Model)
+            {
+                <tr>
+                    <td>@customer.Id</td>
+                    <td>@customer.Name</td>
+                    <td>@customer.City</td>
+                    <td>@customer.Country</td>
+                </tr>
+            }
+        }
+    </table>
+}
+
+
+
+
+
+
+
+

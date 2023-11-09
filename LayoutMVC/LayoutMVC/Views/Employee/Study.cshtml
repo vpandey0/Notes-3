@@ -1,0 +1,30 @@
+﻿
+<h2>Study</h2>
+@{
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+    ViewBag.Title = "Study";
+    
+    
+ }
+@{
+    for (int i = 0; i < 5; i++)
+    {
+        <input type="text" value="@i" />
+        <br />
+    }
+}
+@section MySection
+{
+    <div>Footer MVC asp.net</div>
+    
+}
+@section MyScript
+{
+    <script>
+        alert("Hello");
+    </script>
+
+ }
+
+
+

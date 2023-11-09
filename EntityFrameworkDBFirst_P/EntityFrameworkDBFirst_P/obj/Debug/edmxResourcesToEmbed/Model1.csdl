@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBFirstDB_ProcModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DBFirstDB_ProcContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <FunctionImport Name="Customers_SearchCustomers" ReturnType="Collection(DBFirstDB_ProcModel.Customers_SearchCustomers_Result)">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AddCusDetails">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="City" Mode="In" Type="String" />
+      <Parameter Name="Country" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetCustomer" ReturnType="Collection(DBFirstDB_ProcModel.GetCustomer_Result)" />
+    <FunctionImport Name="DeleteCusById">
+      <Parameter Name="custId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateCustomer">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="City" Mode="In" Type="String" />
+      <Parameter Name="Country" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SearchCusById" ReturnType="Collection(DBFirstDB_ProcModel.SearchCusById_Result)">
+      <Parameter Name="cId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SearchCusById1" ReturnType="Collection(DBFirstDB_ProcModel.SearchCusById1_Result)">
+      <Parameter Name="cId" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="Customers_SearchCustomers_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Country" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="GetCustomer_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Country" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="SearchCusById_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Country" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="SearchCusById1_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Country" Nullable="true" MaxLength="20" />
+  </ComplexType>
+</Schema>

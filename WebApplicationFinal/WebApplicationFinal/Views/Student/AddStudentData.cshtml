@@ -1,0 +1,61 @@
+﻿@model WebApplicationFinal.Models.Student
+
+@{
+    ViewBag.Title = "AddStudentData";
+}
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSave").click(function () {
+            ValidationForm();
+        });
+        
+    });
+        function ValidationForm() {
+        if (!$("#empForm").valid()) {
+            return false;
+        }
+    }
+</script>
+
+
+@using (Html.BeginForm("AddStudentData", "Student", FormMethod.Post, new {id= "empForm" }))
+{
+
+    <h2>AddStudentData</h2>
+
+   
+    <table class="table">
+        <tr>
+            <th>Name </th>
+            <td>
+                @Html.TextBoxFor(m => m.Name,htmlAttributes: new {@class="form-control"}) <br />
+                @Html.ValidationMessageFor(m => m.Name, "", new {@class="text-danger"} )
+            </td>
+        </tr>
+        <tr>
+            <th> Address </th>
+            <td>
+                @Html.TextBoxFor(m => m.Address, htmlAttributes: new { @class = "form-control" })<br />
+                @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+
+            </td>
+        </tr>
+        <tr>
+            <th>  Age </th>
+            <td>
+                @Html.TextBoxFor(m => m.Age, htmlAttributes: new { @class = "form-control" })<br />
+                @Html.ValidationMessageFor(m => m.Age, "", new { @class = "text-danger" })
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Save" class="btn btn-primary"  id="btnSave"/>
+            </td>
+        </tr>
+
+    </table>
+}
+

@@ -1,0 +1,51 @@
+﻿@using MVC_Practice.Models;
+@{
+    ViewBag.Title = "Course Information";
+    PracticeClass course = ViewBag.li as PracticeClass;
+    Response.Write(course);
+
+}
+
+<h3>Course Information</h3>
+<html>
+<head>
+    <title>
+        Course Information
+    </title>
+    <style>
+        ttable, td, th {
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <table class="table table-bordered table-responsive table-hover" >
+        <tr>
+            <th>Course Name</th>
+            <th>Course Fee</th>
+            <th>Course Id</th>
+        </tr>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td> @c.CName </td>
+                <td> @c.fee </td>
+                <td> @c.Id </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
+
+

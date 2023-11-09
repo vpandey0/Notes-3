@@ -1,0 +1,43 @@
+﻿@using Day1MVC.Models;
+@{
+    //int i = ViewBag.Id;
+    //Response.Write(i);
+    CourseClass c = ViewBag.Co as CourseClass;
+    Response.Write(c.Id + " " + c.Name);
+
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Course</title>
+    <style>
+        table,th,td {
+            border:1px solid black;
+        }
+        table{
+            border-collapse:collapse;
+        }
+    </style>
+
+
+    }
+</head>
+<body>
+    <div> 
+        <table >
+            <tr>
+                <th>Course Name</th>
+                <th>Course Id</th>
+            </tr>
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.Name</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

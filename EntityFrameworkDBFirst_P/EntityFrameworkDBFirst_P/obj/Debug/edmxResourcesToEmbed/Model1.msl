@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBFirstDB_ProcModelStoreContainer" CdmEntityContainer="DBFirstDB_ProcContext">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="DBFirstDB_ProcModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Customers_SearchCustomers" FunctionName="DBFirstDB_ProcModel.Store.Customers_SearchCustomers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBFirstDB_ProcModel.Customers_SearchCustomers_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AddCusDetails" FunctionName="DBFirstDB_ProcModel.Store.AddCusDetails" />
+    <FunctionImportMapping FunctionImportName="GetCustomer" FunctionName="DBFirstDB_ProcModel.Store.GetCustomer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBFirstDB_ProcModel.GetCustomer_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeleteCusById" FunctionName="DBFirstDB_ProcModel.Store.DeleteCusById" />
+    <FunctionImportMapping FunctionImportName="UpdateCustomer" FunctionName="DBFirstDB_ProcModel.Store.UpdateCustomer" />
+    <FunctionImportMapping FunctionImportName="SearchCusById1" FunctionName="DBFirstDB_ProcModel.Store.SearchCusById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBFirstDB_ProcModel.SearchCusById1_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "GetUserProfile";
+}
+
+<h2>GetUserProfile</h2>
+
+<button id="getlist" class="btn btn-primary">Show Data</button>
+<table class="table" id="tblbody">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+               Name
+            </th>
+            <th>
+               Email
+            </th>
+            <th>
+               Profile
+            </th>
+            <th>
+                Description
+            </th>
+
+        </tr>
+    </thead>
+    <tbody >
+    </tbody>
+
+
+    @*@foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfileName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+
+            </tr>
+
+        }*@
+
+</table>
+
+<div>
+    @Html.ActionLink("Create ", "CreateUserProfile") <br />
+    @Html.ActionLink("Delete", "DeleteUserProfile")
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#getlist").on("click", function () {
+                $("#tblbody tbody").empty();
+                getData();
+            })
+
+        });
+        function getData() {
+
+            $.ajax({
+                type: 'GET',
+                url: '/User/GetJson',
+                success: function (data) {
+                    $.each(data, function (index, item) {
+                        console.log(item);
+                        const newRow = $('<tr>');
+                        newRow.append($('<td>').text(item.Id));
+                        newRow.append($('<td>').text(item.Name));
+                        newRow.append($('<td>').text(item.Email));
+                        newRow.append($('<td>').text(item.ProfileName));
+                        newRow.append($('<td>').text(item.Description));
+                        console.log(newRow);
+                        $("#tblbody tbody").append(newRow);
+                    });
+                },
+                error: function (data) {
+                    alert('woops!'); //or whatever
+                }
+            });
+        }
+
+    </script>
+}
+
+
+
+

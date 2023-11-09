@@ -1,0 +1,40 @@
+﻿@model WebApplicationFinal.Models.ViewModel.StudentViewModel
+
+@{
+    ViewBag.Title = "StudentSearchById";
+}
+
+@using (Html.BeginForm("StudentSearchById", "Student", FormMethod.Post))
+ {
+<h2>StudentSearchById</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <td>Enter the Id: </td>
+        <td>
+            @Html.TextBoxFor(m => m.Id) <br />
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <input type="submit" value="Search" class="btn btn-danger" />
+        </td>
+    </tr>
+    <tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+   <tr>
+        <td>
+            @Html.DisplayFor(modelItem => modelItem.Name)
+        </td>
+    </tr>
+</table>
+}

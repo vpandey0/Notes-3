@@ -1,0 +1,33 @@
+﻿@model PracticeMvc.Models.Student
+@{
+    ViewBag.Title = "DeleteStudentData";
+}
+
+<h3>DeleteStudentData</h3>
+
+@using (Html.BeginForm("DeleteStudentData", "Student", FormMethod.Post))
+{
+    <h3>Student Details</h3>
+    <table class="">
+
+        <tr>
+            <td>Enter the Id: </td>
+            <td>
+                @Html.TextBoxFor(m=>m.Id) <br />
+              
+            </td>
+        </tr> <br />
+        <tr>
+            <td>
+                 <input type="submit" value="Delete" class="btn btn-danger" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.ActionLink("Back to Index", "Index")
+            </td>
+        </tr>
+   </table>
+      
+
+}

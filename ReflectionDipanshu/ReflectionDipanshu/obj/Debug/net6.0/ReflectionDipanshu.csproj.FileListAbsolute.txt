@@ -1,0 +1,14 @@
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\bin\Debug\net6.0\ReflectionDipanshu.exe
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\bin\Debug\net6.0\ReflectionDipanshu.deps.json
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\bin\Debug\net6.0\ReflectionDipanshu.runtimeconfig.json
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\bin\Debug\net6.0\ReflectionDipanshu.dll
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\bin\Debug\net6.0\ReflectionDipanshu.pdb
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\obj\Debug\net6.0\ReflectionDipanshu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\obj\Debug\net6.0\ReflectionDipanshu.AssemblyInfoInputs.cache
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\obj\Debug\net6.0\ReflectionDipanshu.AssemblyInfo.cs
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\obj\Debug\net6.0\ReflectionDipanshu.csproj.CoreCompileInputs.cache
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\obj\Debug\net6.0\ReflectionDipanshu.dll
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\obj\Debug\net6.0\refint\ReflectionDipanshu.dll
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\obj\Debug\net6.0\ReflectionDipanshu.pdb
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\obj\Debug\net6.0\ReflectionDipanshu.genruntimeconfig.cache
+C:\Users\InviaILC\source\repos\ReflectionDipanshu\ReflectionDipanshu\obj\Debug\net6.0\ref\ReflectionDipanshu.dll

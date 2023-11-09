@@ -1,0 +1,43 @@
+﻿@model RelationshipOneToMany_FluentApi.Models.EmpViewModel
+
+@{
+    ViewBag.Title = "SearchEmployeeDetails";
+}
+
+
+@using (Html.BeginForm("SearchEmployeeDetails", "Employee", FormMethod.Post))
+{
+    <h2>SearchEmployeeDetails</h2>
+
+    <p>
+        @*@Html.ActionLink("Create New", "Create")*@
+    </p>
+    <table class="table">
+        <tr>
+            <td>Enter the Id: </td>
+            <td>
+                @Html.TextBoxFor(m => m.Id) <br />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" value="Search" class="btn btn-danger" />
+            </td>
+        </tr>
+        <tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.Name)
+            </td>
+        </tr>
+        
+
+    </table>
+}

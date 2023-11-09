@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_MyLayout</title>
+    <script>
+
+    </script>
+    
+    @RenderSection("MyScript", false)
+</head>
+<body>
+    <div> 
+        @RenderBody()
+    </div>
+    <div>
+        @RenderSection("MySection",false)
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<button id="first">Details</button>
+<div id="mydiv"></div>
+
+
+<script>
+    $(document).ready(function () {
+        $("#first").on("click", function () {
+          /* alert("Done")*/
+            //$.get("/Employee/GetData", function (res) {
+            //    $("#mydiv").html(res.Name);
+            //});
+            $.ajax({
+                url: '/Employee/GetData',
+                type: 'Get',
+                success: function (res) {
+                      $("#mydiv").html(res.Name);
+                },
+                error: function (res) {
+                      alert('woops!'); //or whatever
+                }
+            })
+        });
+    });
+</script>
+

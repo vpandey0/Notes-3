@@ -1,0 +1,87 @@
+﻿@model IEnumerable<EntityFrameworkDBFirst_P.GetCustomer_Result>
+
+@{
+    ViewBag.Title = "GetCustDetail";
+}
+
+<h2>Customer Details</h2>
+
+
+    <table class="table table-bordered table-responsive-lg table-hover">
+        <tr class="table-dark">
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+
+                @Html.ActionLink("Edit", "UpdateCustomers", new { id = item.Id }, new { @class = "btn btn btn-secondary btn-sm" })
+                &nbsp;
+                @Html.ActionLink("Delete", "DeleteCustomers", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+    </table>
+@*<html>
+<head>
+    <script>
+        $('#dataTable').DataTable({
+            "ajax": {
+                "url": "/Home/GetCustDetail",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                { "data": "Id" },
+                { "data": "Name" },
+                { "data": "City" },
+                { "data": "Country" },
+
+            ]
+        });
+    </script>
+</head>
+<body>
+    <div class="container py-4">
+        <h4 class="text-center text-uppercase">HOW TO RETRIEVE DATA FROM DATABASE USING JQUERY AJAX IN MVC5</h4>
+        <div id="dataTable_wrapper"></div>
+        <table id="dataTable" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Office</th>
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>*@

@@ -1,0 +1,56 @@
+﻿@model List<RelationshipFluentApi_Final.Models.UserProfileViewModel>
+
+<table class="table table-striped table-dark">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Description</th>
+            <th>Profile Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.Description</td>
+                <td>@item.ProfileName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div id="userProfileContainer">
+    <!-- User profiles will be displayed here -->
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            // Load user profiles via AJAX on page load
+            loadUserProfiles();
+
+            function loadUserProfiles() {
+                $.ajax({
+                    url: '@Url.Action("GetUserProfile", "User")',
+                    type: 'GET',
+                    success: function (result) {
+                        $('#userProfileContainer').html(result);
+                    },
+                    error: function () {
+                        console.error('Error loading user profiles.');
+                    }
+                });
+            }
+        });
+    </script>
+}
+
+
+
+
+

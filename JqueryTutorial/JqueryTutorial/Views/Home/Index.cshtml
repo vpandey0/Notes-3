@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<button id="btn1" > Click Here</button>
+
+@section scripts
+{
+    <script>
+        $("#btn1").on('click', () => {
+            alert("button is clicked");
+        })
+    </script>
+}
+@*/*Javascript*/
+        var a = document.getElementById("btn1");
+
+        function clicked() {
+            alert("button is clicked");
+        }
+
+
+        /*Jquery*/
+        $("#btn1").on('click', () => {
+            alert("button is clicked");
+        })*@

@@ -1,0 +1,14 @@
+C:\Users\InviaILC\source\repos\Day14\Day14\bin\Debug\net6.0\Day14.exe
+C:\Users\InviaILC\source\repos\Day14\Day14\bin\Debug\net6.0\Day14.deps.json
+C:\Users\InviaILC\source\repos\Day14\Day14\bin\Debug\net6.0\Day14.runtimeconfig.json
+C:\Users\InviaILC\source\repos\Day14\Day14\bin\Debug\net6.0\Day14.dll
+C:\Users\InviaILC\source\repos\Day14\Day14\bin\Debug\net6.0\Day14.pdb
+C:\Users\InviaILC\source\repos\Day14\Day14\obj\Debug\net6.0\Day14.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\InviaILC\source\repos\Day14\Day14\obj\Debug\net6.0\Day14.AssemblyInfoInputs.cache
+C:\Users\InviaILC\source\repos\Day14\Day14\obj\Debug\net6.0\Day14.AssemblyInfo.cs
+C:\Users\InviaILC\source\repos\Day14\Day14\obj\Debug\net6.0\Day14.csproj.CoreCompileInputs.cache
+C:\Users\InviaILC\source\repos\Day14\Day14\obj\Debug\net6.0\Day14.dll
+C:\Users\InviaILC\source\repos\Day14\Day14\obj\Debug\net6.0\refint\Day14.dll
+C:\Users\InviaILC\source\repos\Day14\Day14\obj\Debug\net6.0\Day14.pdb
+C:\Users\InviaILC\source\repos\Day14\Day14\obj\Debug\net6.0\Day14.genruntimeconfig.cache
+C:\Users\InviaILC\source\repos\Day14\Day14\obj\Debug\net6.0\ref\Day14.dll

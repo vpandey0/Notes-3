@@ -1,0 +1,14 @@
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\bin\Debug\net6.0\PropertiesDay6.exe
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\bin\Debug\net6.0\PropertiesDay6.deps.json
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\bin\Debug\net6.0\PropertiesDay6.runtimeconfig.json
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\bin\Debug\net6.0\PropertiesDay6.dll
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\bin\Debug\net6.0\PropertiesDay6.pdb
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\obj\Debug\net6.0\PropertiesDay6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\obj\Debug\net6.0\PropertiesDay6.AssemblyInfoInputs.cache
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\obj\Debug\net6.0\PropertiesDay6.AssemblyInfo.cs
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\obj\Debug\net6.0\PropertiesDay6.csproj.CoreCompileInputs.cache
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\obj\Debug\net6.0\PropertiesDay6.dll
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\obj\Debug\net6.0\refint\PropertiesDay6.dll
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\obj\Debug\net6.0\PropertiesDay6.pdb
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\obj\Debug\net6.0\PropertiesDay6.genruntimeconfig.cache
+C:\Users\InviaILC\source\repos\PropertiesDay6\PropertiesDay6\obj\Debug\net6.0\ref\PropertiesDay6.dll

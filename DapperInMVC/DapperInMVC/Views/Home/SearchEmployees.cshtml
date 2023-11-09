@@ -1,0 +1,69 @@
+﻿@model DapperInMVC.Models.Employee
+
+@{
+    ViewBag.Title = "SearchEmployees";
+}
+
+<h2>SearchEmployees</h2>
+
+
+@{
+    ViewBag.Title = "SearchEmployeeDetails";
+}
+
+
+@using (Html.BeginForm("SearchEmployees", "Home", FormMethod.Post))
+{
+    <h2>SearchEmployeeDetails</h2>
+
+
+    <table class="table">
+        <tr>
+            <td>Enter the Id: </td>
+            <td>
+                @Html.TextBoxFor(m => m.Id) <br />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" value="Search" class="btn btn-danger" />
+            </td>
+        </tr>
+        <tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>*@
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.Name)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => modelItem.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.City)
+            </td>*@
+        </tr>
+
+
+    </table>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

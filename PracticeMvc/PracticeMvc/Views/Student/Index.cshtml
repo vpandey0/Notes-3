@@ -1,0 +1,52 @@
+﻿@model IEnumerable<PracticeMvc.Models.Student>
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h2>Index</h2>
+<table class="table">
+    <tr>
+        <td>
+            @Html.ActionLink("Create", "AddStudentData")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Delete", "DeleteStudentData")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Search", "SearchStudentData")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Update", "UpdateStudentData")
+        </td>
+    </tr>
+    @foreach(var i in Model)
+      {
+        <tr>
+            <td>
+                @Html.DisplayFor(m=>i.Id)
+            </td>  
+            <td>
+                @Html.DisplayFor(m=>i.Name)
+            </td>  
+            <td>
+                @Html.DisplayFor(m=>i.Age)
+            </td> 
+            <td>
+                @Html.DisplayFor(m=>i.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(m=>i.Branch)
+            </td>
+
+        </tr>
+
+      }
+</table>
+

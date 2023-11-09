@@ -1,0 +1,26 @@
+﻿@model RelationshipFluentApi_Final.Models.User
+
+@{
+    ViewBag.Title = "DeleteUserProfile";
+}
+@using (Html.BeginForm("DeleteUserProfile", "User", FormMethod.Post))
+{
+
+<h2>DeleteUserProfile</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>User</h4>
+    <hr />
+    <p>Enter the id</p>
+    <div>
+        @Html.TextBoxFor(m=>m.Id)
+    </div>
+   
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        @*@Html.ActionLink("Back to list", "Index")*@
+    </div>
+    
+</div>
+}

@@ -1,0 +1,14 @@
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\bin\Debug\net6.0\ExceptionHandlingD15.exe
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\bin\Debug\net6.0\ExceptionHandlingD15.deps.json
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\bin\Debug\net6.0\ExceptionHandlingD15.runtimeconfig.json
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\bin\Debug\net6.0\ExceptionHandlingD15.dll
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\bin\Debug\net6.0\ExceptionHandlingD15.pdb
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\obj\Debug\net6.0\ExceptionHandlingD15.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\obj\Debug\net6.0\ExceptionHandlingD15.AssemblyInfoInputs.cache
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\obj\Debug\net6.0\ExceptionHandlingD15.AssemblyInfo.cs
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\obj\Debug\net6.0\ExceptionHandlingD15.csproj.CoreCompileInputs.cache
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\obj\Debug\net6.0\ExceptionHandlingD15.dll
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\obj\Debug\net6.0\refint\ExceptionHandlingD15.dll
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\obj\Debug\net6.0\ExceptionHandlingD15.pdb
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\obj\Debug\net6.0\ExceptionHandlingD15.genruntimeconfig.cache
+C:\Users\InviaILC\source\repos\ExceptionHandlingD15\ExceptionHandlingD15\obj\Debug\net6.0\ref\ExceptionHandlingD15.dll

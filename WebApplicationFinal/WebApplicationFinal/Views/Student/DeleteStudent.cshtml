@@ -1,0 +1,46 @@
+﻿@model WebApplicationFinal.Models.Student
+
+@{
+    ViewBag.Title = "DeleteStudent";
+}
+
+@using (Html.BeginForm("DeleteStudent", "Student", FormMethod.Post))
+{
+<h2>DeleteStudent</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <td>Enter the Id: </td>
+        <td>
+            @Html.TextBoxFor(m=>m.Id)
+            <br />
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="submit" value="Delete" class="btn btn-danger" />
+        </td>
+    </tr>
+    <tr>
+
+
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+
+    <tr>
+        <td>
+            @Html.DisplayFor(model=>model.Name)
+        </td>
+    </tr>
+
+</table>
+}

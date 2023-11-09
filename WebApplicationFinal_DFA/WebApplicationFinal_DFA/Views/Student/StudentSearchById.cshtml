@@ -1,0 +1,32 @@
+﻿@model WebApplicationFinal_DFA.Models.ViewModel.StudentViewModel
+
+@{
+    ViewBag.Title = "StudentSearchById";
+}
+@using (Html.BeginForm("StudnetSearchById", "Student", FormMethod.Post))
+{
+
+<h2>StudentSearchById</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(m => m.Name)
+        </td>
+        <td>
+
+        </td>
+    </tr>
+
+
+</table>
+}

@@ -1,0 +1,14 @@
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\bin\Debug\net6.0\Day16GarbageCollection.exe
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\bin\Debug\net6.0\Day16GarbageCollection.deps.json
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\bin\Debug\net6.0\Day16GarbageCollection.runtimeconfig.json
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\bin\Debug\net6.0\Day16GarbageCollection.dll
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\bin\Debug\net6.0\Day16GarbageCollection.pdb
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\obj\Debug\net6.0\Day16GarbageCollection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\obj\Debug\net6.0\Day16GarbageCollection.AssemblyInfoInputs.cache
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\obj\Debug\net6.0\Day16GarbageCollection.AssemblyInfo.cs
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\obj\Debug\net6.0\Day16GarbageCollection.csproj.CoreCompileInputs.cache
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\obj\Debug\net6.0\Day16GarbageCollection.dll
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\obj\Debug\net6.0\refint\Day16GarbageCollection.dll
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\obj\Debug\net6.0\Day16GarbageCollection.pdb
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\obj\Debug\net6.0\Day16GarbageCollection.genruntimeconfig.cache
+C:\Users\InviaILC\source\repos\Day16GarbageCollection\Day16GarbageCollection\obj\Debug\net6.0\ref\Day16GarbageCollection.dll

@@ -1,0 +1,56 @@
+﻿@using PagedList.Mvc
+@model  PagedList.IPagedList<WebApplicationFinal.Models.Student>
+@*@model IEnumerable<WebApplicationFinal.Models.Student>*@
+
+@{
+    ViewBag.Title = "StudentOperation";
+}
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+<h2>StudentOperation</h2><br>
+
+<table class="table table-active table-hover table-bordered">
+    <tr class="table-dark"> 
+        <th>
+            @Html.Label("Id")
+        </th>
+        <th>
+            @Html.Label("Name")
+        </th>
+        <th>
+            @Html.Label("Address")
+        </th>
+        <th>
+            @Html.Label("Age")
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+        </tr>
+    }
+
+</table>
+
+    <div  style="margin-left: 400px">
+        @*Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)of @Model.PageCount*@ 
+        <div class="pagination" style="align-content:center">
+            @Html.PagedListPager(Model, page => Url.Action("StudentOperation", new { page }))
+
+        </div>
+    </div>
+  
+
